@@ -1,0 +1,86 @@
+generated: '2026-10-15'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://developer.swedbankpay.com/checkout-v3/test-data/
+sources:
+- https://developer.swedbankpay.com/checkout-v3/test-data/
+description: Swedbank Pay sandbox / test mode information extracted from the provider documentation.
+modes:
+- name: sandbox
+test_values:
+- kind: card
+  value: '5226612199533406'
+  meaning: MasterCard 3‑D Secure enrolled
+- kind: card
+  value: '4761739001010416'
+  meaning: Visa 3‑D Secure enrolled
+- kind: card
+  value: '5510000000001232'
+  meaning: MasterCard challenge flow (Network Tokenization)
+- kind: card
+  value: '5510000000002347'
+  meaning: MasterCard challenge flow (Network Tokenization)
+- kind: card
+  value: '5510000000009631'
+  meaning: MasterCard challenge flow (Network Tokenization)
+- kind: card
+  value: '5510000000005431'
+  meaning: MasterCard challenge flow (Network Tokenization)
+- kind: card
+  value: '4111112000003211'
+  meaning: Visa challenge flow (Network Tokenization)
+- kind: card
+  value: '4111112000006545'
+  meaning: Visa challenge flow (Network Tokenization)
+- kind: card
+  value: '4111112000004565'
+  meaning: Visa challenge flow (Network Tokenization)
+- kind: card
+  value: '4111112000007899'
+  meaning: Visa challenge flow (Network Tokenization)
+- kind: card
+  value: '377601000000000'
+  meaning: American Express (misc card, not network tokenized or 3‑D Secure)
+- kind: card
+  value: '5019994016316467'
+  meaning: Dankort (misc card)
+- kind: card
+  value: '5019994001307083'
+  meaning: Dankort (misc card)
+- kind: card
+  value: '6007220000000004'
+  meaning: Forbrugsforeningen (misc card)
+- kind: card
+  value: '6764429999947470'
+  meaning: Maestro (misc card)
+- kind: card
+  value: '5226600159865967'
+  meaning: MasterCard (misc card)
+- kind: card
+  value: '5226603115488031'
+  meaning: MasterCard (misc card)
+- kind: card
+  value: '5226604266737382'
+  meaning: MasterCard (misc card)
+- kind: card
+  value: '5226600156995650'
+  meaning: MasterCard (misc card)
+- kind: card
+  value: '4925000000000004'
+  meaning: Visa (misc card)
+- kind: card
+  value: '4581097032723517'
+  meaning: Visa (misc card)
+- kind: card
+  value: '4581099940323133'
+  meaning: Visa (misc card)
+- kind: card
+  value: '4571994016401817'
+  meaning: Visa/Dankort (misc card)
+- kind: card
+  value: '4571994016471869'
+  meaning: Visa/Dankort (misc card)
+note: The documentation does not provide base URLs, authentication details, key prefixes, or specific magic amount values for error testing. Those
+  fields are left empty as per the rules.
+docs:
+- https://developer.swedbankpay.com/checkout-v3/test-data/

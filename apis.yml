@@ -1,23 +1,102 @@
 aid: swedbank-pay
+
 name: Swedbank Pay
-description: 'Swedbank Pay is a company surfaced via the API Evangelist harvest backlog (source: stockholm-trip)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Swedbank Pay provides a comprehensive, end‑to‑end payment platform for merchants and developers across Sweden and the Nordics. It offers in‑store, online, and acquiring solutions, along with a developer portal, sandbox environment, and extensive documentation to integrate payments, recurring billing, and tokenisation into web, mobile, and POS applications.'
+
 url: https://raw.githubusercontent.com/api-evangelist/swedbank-pay/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:stockholm-trip
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-15 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-14'
+
 modified: '2026-10-14'
+
 tags:
 - Company
-apis: []
+- Payments
+- FinTech
+- API
+- Nordic
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Spectral
+  url: rules/swedbank-pay-rules.yml
+- type: Sandbox
+  url: sandbox/swedbank-pay-sandbox.yml
+- type: Conformance
+  url: conformance/swedbank-pay-conformance.yml
+- type: SecurityTxt
+  url: well-known/swedbank-pay-status-security.txt
+- type: WellKnown
+  url: well-known/swedbank-pay-well-known.yml
+- type: Hosts
+  url: hosts/swedbank-pay-hosts.yml
+- type: Vendors
+  url: vendors/swedbank-pay-vendors.yml
+- type: SDKs
+  url: packages/swedbank-pay-packages.yml
+- type: Packages
+  url: packages/swedbank-pay-packages.yml
+- type: TermsOfService
+  url: https://developer.swedbankpay.com/checkout-v3/features/customize-ui/tos/
+- type: StatusPage
+  url: https://status.swedbankpay.com/
+- type: Pricing
+  url: https://developer.swedbankpay.com/old-implementations/checkout-v2/technical-reference/prices/
+- type: ChangeLog
+  url: https://developer.swedbankpay.com/release-notes/
+- type: GettingStarted
+  url: https://developer.swedbankpay.com/checkout-v3/get-started/setup/
+- type: GitHubOrganization
+  url: https://github.com/SwedbankPay
+- type: DomainSecurity
+  url: security/swedbank-pay-domain-security.yml
 - type: Website
   url: https://swedbankpay.com/
+- type: Documentation
+  url: https://developer.swedbankpay.com/
+- type: Support
+  url: https://www.swedbankpay.com/contact-us
+- type: Blog
+  url: https://www.swedbankpay.com/newsroom
+
+apis:
+- aid: swedbank-pay:swedbank-pay-api
+  name: Swedbank Pay API
+  description: 'Swedbank Pay API as documented publicly: 7 operations. Contract generated from the documentation by API Evangelist (2026-10-15);
+    not the provider''s own document.'
+  humanURL: https://developer.swedbankpay.com/old-implementations/payment-instruments-v1/card/technical-reference/operations
+  baseURL: https://api.externalintegration.payex.com
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/swedbank-pay-openapi-generated.yml
+    x-provenance: generated
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: Developer portal provides documentation but no machine‑readable OpenAPI spec was found.
+  evidence:
+    - url: https://developer.swedbankpay.com/
+      status: 200
+  checked: '2026-10-15'
+x-enrichment:
+  date: '2026-10-15'
+  status: enriched
+  artifacts_added: 11
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

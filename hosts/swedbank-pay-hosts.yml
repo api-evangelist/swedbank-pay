@@ -1,0 +1,133 @@
+generated: '2026-10-15'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 10
+  own: 8
+  other_domain: 1
+  platform: 1
+  roles:
+  - api
+  - docs
+  - other
+  - source
+  - status
+  - support
+  - website
+hosts:
+- host: api.externalintegration.payex.com
+  found_by:
+  - apis[]
+  types: []
+  serves:
+  - api
+  registrable_domain: payex.com
+  role: api
+  relation: other-domain
+- host: api.swedbankpay.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: swedbankpay.com
+  role: api
+  relation: own
+- host: app.swedbankpay.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: swedbankpay.com
+  role: other
+  relation: own
+- host: developer.swedbankpay.com
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - TermsOfService
+  - Pricing
+  - ChangeLog
+  - GettingStarted
+  - Documentation
+  serves:
+  - docs
+  registrable_domain: swedbankpay.com
+  role: docs
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: merchantportal.swedbankpay.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: swedbankpay.com
+  role: other
+  relation: own
+- host: playground.swedbankpay.com
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: swedbankpay.com
+  role: other
+  relation: own
+- host: status.swedbankpay.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - well-known
+  types:
+  - StatusPage
+  serves: []
+  registrable_domain: swedbankpay.com
+  role: status
+  relation: own
+- host: swedbankpay.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  serves:
+  - cdn
+  vendor: cloudflare
+  registrable_domain: swedbankpay.com
+  role: website
+  relation: own
+- host: www.swedbankpay.com
+  found_by:
+  - pointer
+  types:
+  - Support
+  - Blog
+  serves: []
+  registrable_domain: swedbankpay.com
+  role: support
+  relation: own

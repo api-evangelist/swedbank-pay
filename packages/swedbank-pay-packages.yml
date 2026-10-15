@@ -1,0 +1,96 @@
+generated: '2026-10-15'
+method: probed
+generator: harvest-packages.py
+source: registry metadata endpoints (registry.npmjs.org, pypi.org, rubygems.org, api.nuget.org, packagist.org, crates.io) ; github.com/SwedbankPay
+ownership_rule: 'official: true only when the registry metadata (homepage, repository, author, URLs) names the provider''s domain (security/swedbank-pay-domain-security.yml,
+  swedbankpay.com) or its accepted GitHub org (SwedbankPay).'
+packages:
+- name: swedbank-pay
+  registry: npm
+  url: https://www.npmjs.com/package/swedbank-pay
+  language: JavaScript
+  official: true
+  version: 1.0.0-alpha.2
+  published: '2020-04-05'
+  evidence: metadata names swedbankpay.com
+- name: swedbank-pay-sdk-php
+  registry: github
+  url: https://github.com/SwedbankPay/swedbank-pay-sdk-php
+  language: PHP
+  official: true
+  version: null
+  published: '2026-10-14'
+  source_repo: https://github.com/SwedbankPay/swedbank-pay-sdk-php
+  evidence: repository in github.com/SwedbankPay, whose profile names the provider's domain
+- name: swedbank-pay-sdk-dotnet
+  registry: github
+  url: https://github.com/SwedbankPay/swedbank-pay-sdk-dotnet
+  language: C#
+  official: true
+  version: null
+  published: '2026-10-12'
+  source_repo: https://github.com/SwedbankPay/swedbank-pay-sdk-dotnet
+  evidence: repository in github.com/SwedbankPay, whose profile names the provider's domain
+- name: swedbank-pay-sdk-ios-example-app
+  registry: github
+  url: https://github.com/SwedbankPay/swedbank-pay-sdk-ios-example-app
+  language: Swift
+  official: true
+  version: null
+  published: '2026-05-18'
+  source_repo: https://github.com/SwedbankPay/swedbank-pay-sdk-ios-example-app
+  evidence: repository in github.com/SwedbankPay, whose profile names the provider's domain
+- name: swedbank-pay-sdk-android
+  registry: github
+  url: https://github.com/SwedbankPay/swedbank-pay-sdk-android
+  language: Kotlin
+  official: true
+  version: null
+  published: '2026-02-19'
+  source_repo: https://github.com/SwedbankPay/swedbank-pay-sdk-android
+  evidence: repository in github.com/SwedbankPay, whose profile names the provider's domain
+- name: swedbank-pay-sdk-android-example-app
+  registry: github
+  url: https://github.com/SwedbankPay/swedbank-pay-sdk-android-example-app
+  language: Kotlin
+  official: true
+  version: null
+  published: '2025-09-17'
+  source_repo: https://github.com/SwedbankPay/swedbank-pay-sdk-android-example-app
+  evidence: repository in github.com/SwedbankPay, whose profile names the provider's domain
+- name: swedbank-pay-sdk-ios
+  registry: github
+  url: https://github.com/SwedbankPay/swedbank-pay-sdk-ios
+  language: Swift
+  official: true
+  version: null
+  published: '2025-06-05'
+  source_repo: https://github.com/SwedbankPay/swedbank-pay-sdk-ios
+  evidence: repository in github.com/SwedbankPay, whose profile names the provider's domain
+- name: swedbank-pay-sdk-js
+  registry: github
+  url: https://github.com/SwedbankPay/swedbank-pay-sdk-js
+  language: TypeScript
+  official: true
+  version: null
+  published: '2023-09-11'
+  source_repo: https://github.com/SwedbankPay/swedbank-pay-sdk-js
+  evidence: repository in github.com/SwedbankPay, whose profile names the provider's domain
+- name: swedbank-pay-sdk-mobile-example-merchant
+  registry: github
+  url: https://github.com/SwedbankPay/swedbank-pay-sdk-mobile-example-merchant
+  language: ''
+  official: true
+  version: null
+  published: '2023-09-05'
+  source_repo: https://github.com/SwedbankPay/swedbank-pay-sdk-mobile-example-merchant
+  evidence: repository in github.com/SwedbankPay, whose profile names the provider's domain
+- name: vas-payment-api-client
+  registry: github
+  url: https://github.com/SwedbankPay/vas-payment-api-client
+  language: Java
+  official: true
+  version: null
+  published: '2023-07-08'
+  source_repo: https://github.com/SwedbankPay/vas-payment-api-client
+  evidence: repository in github.com/SwedbankPay, whose profile names the provider's domain
