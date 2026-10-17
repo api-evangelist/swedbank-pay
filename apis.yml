@@ -75,17 +75,17 @@ common:
   url: https://www.swedbankpay.com/newsroom
 
 apis:
-- aid: swedbank-pay:swedbank-pay-api
-  name: Swedbank Pay API
-  description: 'Swedbank Pay API as documented publicly: 7 operations. Contract generated from the documentation by API Evangelist (2026-10-15);
-    not the provider''s own document.'
-  humanURL: https://developer.swedbankpay.com/old-implementations/payment-instruments-v1/card/technical-reference/operations
+- aid: swedbank-pay:swedbank-pay-psp-api
+  name: Swedbank Pay Psp API
+  description: The Psp API from Swedbank Pay — 6 operation(s) for psp.
+  humanURL: >-
+    https://developer.swedbankpay.com/old-implementations/payment-instruments-v1/card/technical-reference/operations
   baseURL: https://api.externalintegration.payex.com
+  tags:
+  - Psp
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/swedbank-pay-openapi-generated.yml
-    x-provenance: generated
-
+    url: openapi/swedbank-pay-psp-api-openapi.yml
 x-coverage:
   state: unreadable
   reason: no-machine-readable-spec

@@ -1,0 +1,18 @@
+{
+  "provider": "swedbank-pay",
+  "sources": [
+    "_ae-authored/swedbank-pay-openapi-generated.yml"
+  ],
+  "outputs": [
+    "swedbank-pay-psp-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "swedbank-pay-openapi-generated.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: written (+1 apis, 1 total)"
+  ],
+  "skipped": []
+}

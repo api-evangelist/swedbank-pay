@@ -1,0 +1,167 @@
+openapi: 3.2.0
+info:
+  title: Swedbank Pay Psp API
+  version: '2026-10-15'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-15: 7 operation(s) read from 25 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Swedbank Pay has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 0
+    documentation: 7
+    pages-with-code: 0
+    pages-read: 25
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-15'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://developer.swedbankpay.com/old-implementations/payment-instruments-v1/card/technical-reference/operations
+  - https://developer.swedbankpay.com/old-implementations/payment-instruments-v1/swish/technical-reference/operations
+  - https://developer.swedbankpay.com/old-implementations/payment-instruments-v1/vipps/technical-reference/operations
+  - https://developer.swedbankpay.com/old-implementations/payment-instruments-v1/invoice/technical-reference/operations
+  - https://developer.swedbankpay.com/old-implementations/payment-instruments-v1/trustly/technical-reference/operations
+  - https://developer.swedbankpay.com/old-implementations/payment-instruments-v1/mobile-pay/technical-reference/operations
+  - https://developer.swedbankpay.com/checkout-v3/technical-reference/urls
+  - https://developer.swedbankpay.com/checkout-v3/technical-reference/metadata
+  - https://developer.swedbankpay.com/checkout-v3/technical-reference/payee-info
+  - https://developer.swedbankpay.com/checkout-v3/technical-reference/description
+  - https://developer.swedbankpay.com/checkout-v3/technical-reference/resource-sub-models
+  - https://developer.swedbankpay.com/old-implementations/checkout-v2/technical-reference/urls
+  - https://developer.swedbankpay.com/old-implementations/checkout-v2/technical-reference/metadata
+  - https://developer.swedbankpay.com/old-implementations/checkout-v2/technical-reference/payee-info
+  - https://developer.swedbankpay.com/old-implementations/checkout-v2/technical-reference/description
+  - https://developer.swedbankpay.com/old-implementations/checkout-v2/technical-reference/transactions
+  - https://developer.swedbankpay.com/old-implementations/payment-menu-v2/technical-reference/metadata
+  - https://developer.swedbankpay.com/old-implementations/payment-menu-v2/technical-reference/payee-info
+  - https://developer.swedbankpay.com/old-implementations/payment-menu-v2/technical-reference/description
+  - https://developer.swedbankpay.com/old-implementations/payment-menu-v2/technical-reference/transactions
+  - https://developer.swedbankpay.com/old-implementations/checkout-v2/technical-reference/resource-sub-models
+  - https://developer.swedbankpay.com/old-implementations/payment-menu-v2/technical-reference/resource-sub-models
+  - https://developer.swedbankpay.com/old-implementations/payment-instruments-v1/card/technical-reference/metadata
+  - https://developer.swedbankpay.com/old-implementations/payment-instruments-v1/card/features/core/abort-reference
+  - https://developer.swedbankpay.com/old-implementations/payment-instruments-v1/swish/technical-reference/metadata
+servers:
+- url: https://api.externalintegration.payex.com
+tags:
+- name: Psp
+paths:
+  /psp/creditcard/payments/7e6cdfc3-1276-44e9-9992-7cf4419750e1:
+    patch:
+      operationId: patch_psp_creditcard_payments_7e6cdfc3_1276_44e9_9992_7cf4419750e1
+      tags:
+      - Psp
+      summary: Abort Request
+      x-source: https://developer.swedbankpay.com/old-implementations/payment-instruments-v1/card/features/core/abort-reference
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /psp/paymentorders/09ccd29a-7c4f-4752-9396-12100cbfecce/{09ccd29a7c4f4752939612100cbfecceId}:
+    get:
+      operationId: get_psp_paymentorders_09ccd29a_7c4f_4752_9396_12100cbfecce_09ccd29a7c4f475293961
+      tags:
+      - Psp
+      summary: Aborted
+      x-source: https://developer.swedbankpay.com/checkout-v3/technical-reference/resource-sub-models
+      parameters:
+      - name: 09ccd29a7c4f4752939612100cbfecceId
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+        collapsed_from: 8 example path(s) differing only at 09ccd29a7c4f4752939612100cbfecceId
+  /psp/paymentorders/7e6cdfc3-1276-44e9-9992-7cf4419750e1/payeeInfo:
+    get:
+      operationId: get_psp_paymentorders_7e6cdfc3_1276_44e9_9992_7cf4419750e1_payeeInfo
+      tags:
+      - Psp
+      summary: PayeeInfo
+      x-source: https://developer.swedbankpay.com/checkout-v3/technical-reference/payee-info
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /psp/{pspid}/payments/7e6cdfc3-1276-44e9-9992-7cf4419750e1:
+    get:
+      operationId: get_psp_pspid_payments_7e6cdfc3_1276_44e9_9992_7cf4419750e1
+      tags:
+      - Psp
+      summary: Metadata Response
+      x-source: https://developer.swedbankpay.com/old-implementations/payment-instruments-v1/card/technical-reference/metadata
+      parameters:
+      - name: pspid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+        collapsed_from: 2 example path(s) differing only at pspId
+    post:
+      operationId: post_psp_pspid_payments_7e6cdfc3_1276_44e9_9992_7cf4419750e1
+      tags:
+      - Psp
+      summary: Metadata Request
+      x-source: https://developer.swedbankpay.com/old-implementations/payment-instruments-v1/card/technical-reference/metadata
+      parameters:
+      - name: pspid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+        collapsed_from: 2 example path(s) differing only at pspId
+  /psp/{pspid}/payments/7e6cdfc3-1276-44e9-9992-7cf4419750e1/aborted:
+    get:
+      operationId: get_psp_pspid_payments_7e6cdfc3_1276_44e9_9992_7cf4419750e1_aborted
+      tags:
+      - Psp
+      summary: Invoice – Operations
+      description: Retrieves the aborted status of the specified invoice payment.
+      x-source: https://developer.swedbankpay.com/old-implementations/payment-instruments-v1/invoice/technical-reference/operations
+      parameters:
+      - name: pspid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+        collapsed_from: 5 example path(s) differing only at pspId
+  /psp/{pspid}/payments/7e6cdfc3-1276-44e9-9992-7cf4419750e1/paid:
+    get:
+      operationId: get_psp_pspid_payments_7e6cdfc3_1276_44e9_9992_7cf4419750e1_paid
+      tags:
+      - Psp
+      summary: Invoice – Operations
+      description: Retrieves the paid status of the specified invoice payment.
+      x-source: https://developer.swedbankpay.com/old-implementations/payment-instruments-v1/invoice/technical-reference/operations
+      parameters:
+      - name: pspid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+        collapsed_from: 5 example path(s) differing only at pspId
