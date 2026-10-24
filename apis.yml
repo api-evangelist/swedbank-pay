@@ -22,6 +22,11 @@ modified: '2026-10-14'
 tags:
 - Company
 - Payments
+- Fintech
+- Nordic
+tags_raw:
+- Company
+- Payments
 - FinTech
 - API
 - Nordic
@@ -82,6 +87,8 @@ apis:
     https://developer.swedbankpay.com/old-implementations/payment-instruments-v1/card/technical-reference/operations
   baseURL: https://api.externalintegration.payex.com
   tags:
+  - PSP
+  tags_raw:
   - Psp
   properties:
   - type: OpenAPI
